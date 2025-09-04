@@ -17,8 +17,7 @@ export const useUpdateUser = () => {
       queryClient.setQueryData(["user", userId], updatedUser);
     },
     onError: (error: any) => {
-      const errorMessage =
-        error?.response?.data?.message || "Ошибка при обновлении пользователя";
+      console.log(error);
     }
   });
 };

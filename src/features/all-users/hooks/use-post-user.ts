@@ -15,8 +15,7 @@ export const useCreateUser = () => {
       queryClient.invalidateQueries({ queryKey: ["users"] });
     },
     onError: (error: any) => {
-      const errorMessage =
-        error?.response?.data?.message || "Ошибка при создании пользователя";
+      console.log(error);
     }
   });
 };

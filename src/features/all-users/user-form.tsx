@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import type { FormInstance } from "antd";
-import { Button, Form, Input } from "antd";
+import { Form, Input } from "antd";
 import { User } from "./api/get-users";
 
 type Props = {
